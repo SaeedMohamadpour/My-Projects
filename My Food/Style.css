@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+.menu {
+    display: flex;
+    position: sticky;
+    top:0;
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+    background-color: white;
+}
+.icon {
+    flex: 33.33%;
+    max-width: 33.33%;
+    float: left;
+    align-items: center;
+}
+.heading {
+    flex: 33.33%;
+    max-width: 33.33%;
+    float: left;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+.mail {
+    flex: 33.33%;
+    max-width: 33.33%;
+    float: left;
+    align-items: center;
+    text-align: right;
+    font-size: 20px;
+}
+
+/* product section */
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.product-row .product-card {
+    flex: 25%;
+    max-width: 25%;    
+    padding: 10px;
+    text-align: center;
+}
+.product-card .name {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.product-card .description {
+    font-size: 12px;
+    margin-top: 0;
+}
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* pagination section */
+.pagination {
+    text-align: center;
+    padding: 30px;
+}
+.pagination a {
+    color: black;
+    text-decoration: none;
+    padding: 20px 30px;;
+    text-align: center;
+}
+.pagination a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* about section */
+.about {
+    max-width: 100%;
+    text-align: center;
+}
+.about-me {
+    padding: 50px;
+}
+hr {
+    border-color: #f7f7f7;
+    border-width: .7px;
+}
+
+/* footer section */
+footer {
+    display: flex;
+    padding: 40px;
+    max-width: 100%;
+    text-align: left;
+    
+}
+.footer {
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 20px;
+}
+.center ul {
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+}
+.center li {
+    padding: 10px;
+    border-bottom: 1px solid #f7f7f7;
+}
+.center img {
+    width:50px;
+}
+.center span {
+    margin-left: 20px;
+    text-align: left;
+    position: absolute;
+    left: 50px;
+}
+.right button{
+    background-color:gray;
+    color: white;
+    border: none;
+    padding: 5px;
+    margin: 5px 0px 0px 5px;
+}
+
+@media screen and (max-width: 500px) {
+    .product-card{flex: 100%; max-width: 100%;}
+
+}

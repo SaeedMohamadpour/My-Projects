@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f7f7f7;
+}
+
+/* top header section */
+.top {
+    background-color: black;
+}
+.menu i {
+    padding: 15px 15px;
+    color: white;
+}
+.fa-search {
+    float: right;
+}
+i:hover {
+    background-color: aliceblue;
+    color: black;
+    cursor: pointer;
+}
+@media (max-width: 700px) {
+    .top {
+        display: none;
+    }
+}
+
+.content {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+/* header section */
+.header {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+}
+.header h1 {
+    font-size: 54px;
+}
+.header p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.header span {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+/* hero image section */
+.hero-image {
+    max-width: 100%;
+    background-color: white;
+    position: relative;
+}
+.hero-image img {
+    width: 100%;
+}
+.hero-image .hero-titr {
+    color: white; 
+    position: absolute;
+    left: 30px;
+    top: 40%;
+    line-height: 50px;
+}
+.hero-titr h2{
+    font-size:50px;
+}
+.hero-titr h1 {
+    font-size: 70px;
+    font-weight: bolder;
+}
+.hero-titr button{
+    background-color: white;
+    opacity: .5;
+    color: black;
+    padding: 20px;
+    border: none;
+    font-size: 20px;
+    margin-top: 0px;
+}
+@media (max-width: 700px) {
+    .hero-titr h1 {
+        display: none;
+    }
+}
+
+/* column section */
+/* column 1 */
+.content-row {
+    display: flex;
+    flex-flow: wrap;
+    margin: 0px auto;
+    padding: 30px;
+}
+.col-1 {
+    flex: 70%;
+    max-width: 70%;
+    text-align: center;
+    padding: 10px;
+}
+.card {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 40px;
+    display: block;
+}
+.card img {
+    width: 100%;
+}
+.sub-description {
+    text-align: left;
+}
+.subtitle {
+    display: flex;
+    align-items: center;
+}
+.card .like-button {
+    float: left;
+    background-color: white;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+}
+.card button i {
+    color: black;
+    padding: 0px 5px;
+}
+.card .comment-button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    text-align: center;
+    margin-left: auto;
+}
+.card .span2 {
+    background-color: white;
+    color: black;
+    padding: 8px;
+    margin-left: 5px;
+}
+.comment {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+.comment img {
+    width: 100px;
+}
+.comment span {
+    margin-left: 20px;
+}
+hr {
+    border-color: #f7f7f7;
+}
+
+/* column 2 section */
+/* my name section */
+.col-2 {
+    flex: 30%;
+    max-width: 30%;
+    padding: 10px;
+}
+.col-2 .my-name {
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+}
+.col-2 img {
+    width: 100%;
+}
+.col-2 .my-name .sub {
+    padding: 20px;
+}
+
+/* popular posts section */
+.col-2 .popular-posts {
+    background-color: white;
+}
+.col-2 .title {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.col-2 .popular-posts ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.col-2 .popular-posts li {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+.col-2 .popular-posts img {
+    width: 50px;
+}
+.col-2 .popular-posts span {
+    margin-left: 20px;
+}
+
+/* advertise section */
+.col-2 .advertise {
+    background-color: white;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+.col-2 .advertise .ad-image {
+    background-color: #ddd;
+    max-width: 100%;
+    height: 200px;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+}
+.col-2 .advertise .ad-image p {
+    position: absolute;
+    left: 50%;
+    top: 43%;
+    transform: translate(-50%, -50%);
+}
+
+/* tags section */
+.col-2 .tags {
+    background-color: white;
+    padding-bottom: 20px;
+}
+.col-2 .tags .tags-btn {
+    margin: 20px;
+}
+.col-2 .tags .tags-btn button {
+    background-color: #eee;
+    padding: 5px;
+    margin: 10px 0px 0px 10px;
+    border: none;
+}
+
+/* inspiration section */
+.col-2 .inspiration {
+    background-color: white;
+    margin-bottom: 20px;
+}
+.col-2 .inspiration .images {
+    display: flex;
+    flex-flow: wrap;
+    padding: 20px;
+}
+.col-2 .inspiration .images .images-col {
+    flex: 50%;
+    max-width: 50%;
+    padding: 5px;
+}
+.col-2 .inspiration .images img {
+    margin-bottom: 5px;
+}
+
+/* follow me section */
+.col-2 .follow-me {
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.col-2 .follow-me i {
+    color: black;
+    font-size: 24px;
+    padding: 15px 15px;
+}
+
+/* subscribe section */
+.col-2 .subscribe {
+    background-color: white;
+}
+.col-2 .subscribe .subscribe-content {
+    padding: 20px;
+}
+.col-2 .subscribe .subscribe-content input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+/* footer section */
+footer {
+    background-color: cadetblue;
+    padding: 40px
+}
+footer a button {
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: none;
+    padding: 20px;
+}
+footer a button:hover {
+    background-color: aliceblue;
+    color: black;
+    cursor: pointer;
+}
+
+footer a button i {
+    padding: 0px 5px;
+}
+
+/* responsive page */
+@media (max-width: 1000px) {
+    .col-1, .col-2 {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
